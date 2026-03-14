@@ -10,5 +10,6 @@ def evaluate_resume(resume_text: str, job_description: str) -> dict:
     - "strengths": List of candidate's strong points.
     - "weaknesses": List of missing or weak skills.
     - "summary": A brief objective summary of the candidate's fit.
+    - "recommendations": List of actionable, personalized tips for the applicant on how they can improve their resume specifically to catch the recruiter's attention for this role.
     """
     return process_with_gemini(prompt, resume_text)
